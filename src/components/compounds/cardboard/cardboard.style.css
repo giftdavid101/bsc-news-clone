@@ -1,0 +1,67 @@
+.card-board {
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+.card-board_cd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.card-board_cd .card .bottns {
+  margin: 10px 0;
+  display: inline-block;
+  padding: 8px 25px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.emage {
+  width: 100%;
+}
+.emage img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.foto {
+  display: none;
+}
+
+.by-text {
+  font-size: 12px;
+}
+
+.cd-content-tag {
+  padding: 10px;
+  position: relative;
+}
+.cd-content-tag_card-title {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.cd-content-tag_card-end-bottom {
+  width: 100%;
+  position: absolute;
+  top: 190px;
+}
+.cd-content-tag_card-end-bottom_source {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  margin: 0 20px 0 0;
+}
+
+@media screen and (max-width: 996px) {
+  .card-board_cd {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=cardboard.style.css.map */

@@ -1,0 +1,54 @@
+.fourth-section {
+  width: 100%;
+  text-align: start;
+}
+.fourth-section .fs-content {
+  display: flex;
+  align-items: center;
+}
+.fourth-section .fs-content_sdbc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fourth-section .imagees {
+  margin: 10px;
+}
+.fourth-section .imagees img {
+  width: 250px;
+  border-radius: 20px;
+}
+.fourth-section .db {
+  display: flex;
+  align-items: center;
+}
+.fourth-section .db .y {
+  background: #c3a604;
+}
+
+@media screen and (max-width: 996px) {
+  .fs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fs-content .imagees {
+    width: 100%;
+    margin: 10px;
+  }
+  .fs-content .imagees img {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+.bottns {
+  margin: 10px 0;
+  display: inline-block;
+  padding: 8px 25px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=fourthsection.style.css.map */

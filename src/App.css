@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+*{
+    /*outline: 1px solid red;*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+.container{
+    width: 100%;
+    margin: auto;
+    max-width:1150px;
+    /*max-width: 1366px;*/
+    padding: 20px;
+    border-radius: 10px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
 }
+.bottns{
+    margin: 10px 0;
+    display: inline-block;
+    padding: 8px 25px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.line{
+    height:25px;
+    background: black;
+    width: 1px;
+    min-height: 14px;
+    margin: 0 10px;
 }
-
-.App-link {
-  color: #61dafb;
+a{
+    text-decoration: none;
+    color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-tag{
+    border-radius: 8px;
+    padding: 6px 15px;
+    background: black;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+.btn-tag-gold{
+    display: inline-block;
+    padding: 9px 15px;
+    margin: 10px 10px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #c3a604;
+    text-transform: capitalize;
+    text-align: center;
+}
+.red{
+    background: #f65058ff;
+}
+.gold{ background: #c3a604}
+.green{ background: #008c76}
+.white{
+    background:#fff ;
+}
+.black{
+    background: #000
 }

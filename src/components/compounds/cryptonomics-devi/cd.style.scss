@@ -1,0 +1,70 @@
+.cryptonomy-devi{
+  width: 100%;
+  color: white;
+ &_cd {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap:20px;
+
+ }
+}
+.ec{
+  width: 100%;
+  &_ec-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 10px;
+  }
+
+}
+.emage{
+  width: 100%;
+  border:5px solid white;
+  border-radius: 5px;
+}
+.heading, .cd-content {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+  text-wrap: normal;
+}
+.sp{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  padding: 30px 0;
+}
+.pieces{
+  width: 100px;
+  height: 30px;
+  //margin-right: 10px;
+  border-right: 2px #000;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #d3d3d3;
+  font-family: Inter,sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 700;
+  //text-align: center;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 996px) {
+  .cryptonomy-devi{
+    &_cd {
+      display: grid;
+      grid-template-columns:1fr;
+      grid-gap:20px;
+
+    }
+  }
+
+
+
+}

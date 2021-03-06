@@ -1,0 +1,108 @@
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:#333;
+    font-size: 13px;
+  font-family: Inter,sans-serif;
+  font-weight: 500;
+    //background-color: #231f20;
+    &_hc {
+
+        &_hc-content {
+            display: flex;
+          &_mobile-hamburger{
+            display: none;
+          }
+
+            &_logo {
+                width: 45px;
+             margin:10px 20px 27px 30px;
+            }
+            &_list {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                &_nl {
+                    margin: 0 20px 0 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                    a{
+                      color: white;
+                    }
+                  a:hover{
+                    color: #ffcb0a;
+                  }
+
+                    &_pa {
+                        margin: 0 20px 0 20px;
+                        display: flex;
+                        justify-content: space-between;
+                      &_pa-item{
+                        margin: 0 20px 0 20px;
+                        a{
+                          color: white;
+                        };
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 996px) {
+
+.header{
+width: 100%;
+  position: relative;
+  background: white;
+  &_hc{
+    width: 100%;
+    padding: 0 30px;
+    &_hc-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_mobile-list{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: yellow;
+        top: 100px;
+        //transform: translateY(0px) translateX(0px);
+        //transition: transform 400ms ease-out 0s;
+        z-index: 2;
+        &_optn{
+          margin: 40px 0;
+          padding: 0 20px;
+          font-size: 20px;
+        }
+
+      }
+      &_list{
+        display: none;
+
+      }
+      &_mobile-hamburger{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+
+        text-align: center;
+        border-radius: 10px;
+        background-color: #ffcb0a;
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+
+  }
+
+}
+}

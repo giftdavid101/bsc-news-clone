@@ -1,0 +1,24 @@
+.slider {
+  width: 100%;
+  height: 500px;
+  outline: 1px solid black;
+}
+.slider__content {
+  position: relative;
+}
+.slider__content .top-text,
+.slider__content .bottom-text {
+  position: absolute;
+  background: #0000007d;
+  color: white;
+  width: 100%;
+  padding: 8px 2px;
+}
+.slider__content .top-text {
+  top: 0;
+}
+.slider__content .bottom-text {
+  bottom: 0;
+}
+
+/*# sourceMappingURL=slider.style.css.map */

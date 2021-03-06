@@ -1,0 +1,30 @@
+.editors {
+    width: 100%;
+
+    &_ec {
+        &_e-h-header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border-bottom: 3px solid #ffcb0a;
+
+            .is-active {
+                background-color: #ffcb0a;
+            }
+
+            &_hbox {
+                padding: 6px 10px;
+                text-align: center;
+            }
+        }
+        &_story-board {
+            &_sb {
+                padding: 10px;
+              height: 90px;
+                border-bottom: 1px solid #94959873;
+            }
+            &_sb:last-child {
+                border-bottom: unset;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.editors {
+  width: 100%;
+}
+.editors_ec_e-h-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 3px solid #ffcb0a;
+}
+.editors_ec_e-h-header .is-active {
+  background-color: #ffcb0a;
+}
+.editors_ec_e-h-header_hbox {
+  padding: 6px 10px;
+  text-align: center;
+}
+.editors_ec_story-board_sb {
+  padding: 10px;
+  height: 90px;
+  border-bottom: 1px solid #94959873;
+}
+.editors_ec_story-board_sb:last-child {
+  border-bottom: unset;
+}
+
+/*# sourceMappingURL=editors.style.css.map */

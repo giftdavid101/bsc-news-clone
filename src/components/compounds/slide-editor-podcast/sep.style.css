@@ -1,0 +1,24 @@
+.s-e-p {
+  width: 100%;
+  box-shadow: 0 0 11px 0 #d3d3d3;
+  padding: 25px 0;
+}
+.s-e-p_se {
+  margin: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
+}
+.s-e-p_se_se-contnt {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+}
+@media screen and (max-width: 996px) {
+  .s-e-p_se_se-contnt {
+    grid-template-columns: 1fr;
+  }
+  .s-e-p_se_se-contnt .editors {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=sep.style.css.map */

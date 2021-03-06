@@ -1,0 +1,23 @@
+.links {
+  width: 100%;
+}
+.links_lnk-options {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.a-tag {
+  padding: 4px 0;
+}
+
+@media screen and (max-width: 996px) {
+  .links_lnk-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.lnktitle {
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=links.style.css.map */

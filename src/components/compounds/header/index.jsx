@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './header.style.css';
-import { FaBars, BiChevronDown } from 'react-icons/all';
+import { BiChevronDown } from 'react-icons/all';
+import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Header = () => {

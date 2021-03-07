@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './header.style.css';
-import { BiChevronDown } from 'react-icons/all';
-import { FaBars } from 'react-icons/fa';
+import { GiHamburgerMenu, MdKeyboardArrowDown } from 'react-icons/all';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -25,19 +24,19 @@ const Header = () => {
                     <div className={'header_hc_hc-content_list '}>
                         <div className={'header_hc_hc-content_list_nl'}>
                             <Link to={'/'}> Opinions</Link>
-                            <BiChevronDown />
+                            <MdKeyboardArrowDown />
                         </div>
                         <div className={'header_hc_hc-content_list_nl'}>
                             <Link to={'/'}>Binance Smart Chain Defi</Link>
-                            <BiChevronDown />
+                            <MdKeyboardArrowDown />
                         </div>
                         <div className={'header_hc_hc-content_list_nl'}>
                             <Link to={'/'}> Essentials</Link>
-                            <BiChevronDown />
+                            <MdKeyboardArrowDown />
                         </div>
                         <div className={'header_hc_hc-content_list_nl'}>
                             <Link to={'/'}>Binance Smart Chain Tools</Link>
-                            <BiChevronDown />
+                            <MdKeyboardArrowDown />
                         </div>
                         <div className={'header_hc_hc-content_list_nl_pa'}>
                             <div className={'header_hc_hc-content_list_nl_pa_pa-item'}>
@@ -50,29 +49,29 @@ const Header = () => {
                     </div>
 
                     <div className={'header_hc_hc-content_mobile-hamburger'} onClick={handleClick}>
-                        {click ? <FaBars /> : <FaBars />}
+                        {click ? <GiHamburgerMenu /> : <GiHamburgerMenu />}
                     </div>
                     {click ? (
                         <div className={'header_hc_hc-content_mobile-list'} onClick={closeMobileLinks}>
                             <div className={'header_hc_hc-content_mobile-list_optn'}>
                                 <Link to={'/'}> Opinions</Link>
-                                <BiChevronDown />
+                                <MdKeyboardArrowDown />
                             </div>
                             <div className={'header_hc_hc-content_mobile-list_optn'}>
                                 <Link to={'/'}>Binance Smart Chain Defi</Link>
-                                <BiChevronDown />
+                                <MdKeyboardArrowDown />
                             </div>
                             <div className={'header_hc_hc-content_mobile-list_optn'}>
                                 <Link to={'/'}>Binance Smart Chain Tools</Link>
-                                <BiChevronDown />
+                                <MdKeyboardArrowDown />
                             </div>
                             <div className={'header_hc_hc-content_mobile-list_optn'}>
                                 <Link to={'/'}> Podcast</Link>
-                                <BiChevronDown />
+                                <MdKeyboardArrowDown />
                             </div>
                             <div className={'header_hc_hc-content_mobile-list_optn'}>
                                 <Link to={'/'}> All Post</Link>
-                                <BiChevronDown />
+                                <MdKeyboardArrowDown />
                             </div>
                         </div>
                     ) : null}

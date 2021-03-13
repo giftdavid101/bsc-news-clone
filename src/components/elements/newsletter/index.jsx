@@ -5,7 +5,7 @@ import './newsletter.style.css';
 const NewsLetter = () => {
     return (
         <div className={'newsletter'}>
-            <p>Subscribe to join our weekly newsletter </p>
+            <p style={{ padding: '5px' }}>Subscribe to join our weekly newsletter </p>
             <div className={'inp-btn'}>
                 <input value={'Email'} type={'email'} />
                 <Button>Submit</Button>

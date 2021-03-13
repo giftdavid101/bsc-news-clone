@@ -17,9 +17,10 @@ const cpData = [
         id: 2,
         title: '',
         status: '',
-        photo:
+        emag:
             'https://global-uploads.webflow.com/5fad86e1f5867747a5250efa/603041792cc81e64844c9fa9_photo_2021-02-19_22-53-17.jpg',
         name: '',
+
         date: '',
     },
     {
@@ -44,27 +45,32 @@ const CardPreview = () => {
                         emage={el.imageUrl}
                         by={el.name}
                         colur={el.dcolor}>
-                        <div className={'emage'}>
+                        <div
+                            className={'emage cp-e'}
+                            style={{ backgroundImage: `url('${el.emag}')` }}
+                        >
                             <img src={el.photo} alt={'foto'} />
-                        </div>
 
-                        <div className={'photo foto'}>
-                            <img src={el.imageUrl} key={el.id} alt={'foto'} />
-                        </div>
-                        <div className={'cd-content-tag'}>
-                            <div className={'cd-content-tag_card-title'}>{el.title}</div>
-                            <div className={`bottns ${colorCodes}: ${el.dcolor}`}>{el.status}</div>
 
-                            <div className={'cd-content-tag_card-end-bottom'}>
-                                <div className={'cd-content-tag_card-end-bottom_source'}>
-                                    <div>
-                                        <span className={'by-text'}>by</span>
-                                        <span>{el.name}</span>
+                            <div className={'cd-content-tag'}>
+                                <div className={'cd-content-tag_card-title'}>{el.title}</div>
+                                <div className={`bottns ${colorCodes}: ${el.dcolor}`}>{el.status}</div>
+
+                                <div className={'cd-content-tag_card-end-bottom'}>
+                                    <div className={'cd-content-tag_card-end-bottom_source'}>
+                                        <div>
+                                            <span className={'by-text'}>{''}</span>
+                                            <span>{el.name}</span>
+                                        </div>
+                                        <div className={'date'}>{el.date}</div>
                                     </div>
-                                    <div className={'date'}>{el.date}</div>
                                 </div>
                             </div>
                         </div>
+                        {/*<div className={'photo foto'}>*/}
+                        {/*    <img src={el.imageUrl} key={el.id} alt={'foto'} />*/}
+                        {/*</div>*/}
+
                     </Card>
                 ))}
             </div>

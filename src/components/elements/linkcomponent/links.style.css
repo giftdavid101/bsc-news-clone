@@ -8,6 +8,10 @@
 
 .a-tag {
   padding: 4px 0;
+  margin: 0 8px 0 0;
+}
+.a-tag a {
+  color: grey;
 }
 
 @media screen and (max-width: 996px) {

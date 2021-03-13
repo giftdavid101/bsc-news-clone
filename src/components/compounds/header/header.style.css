@@ -79,8 +79,7 @@
     display: none;
   }
   .header_hc_hc-content_mobile-hamburger {
-    width: 80px;
-    height: 80px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;

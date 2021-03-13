@@ -49,7 +49,7 @@ const CardPreview = () => {
                             className={'emage cp-e'}
                             style={{ backgroundImage: `url('${el.emag}')` }}
                         >
-                            <img src={el.photo} alt={'foto'} />
+                            <img src={el.photo} alt={''} />
 
 
                             <div className={'cd-content-tag'}>
@@ -67,9 +67,7 @@ const CardPreview = () => {
                                 </div>
                             </div>
                         </div>
-                        {/*<div className={'photo foto'}>*/}
-                        {/*    <img src={el.imageUrl} key={el.id} alt={'foto'} />*/}
-                        {/*</div>*/}
+
 
                     </Card>
                 ))}

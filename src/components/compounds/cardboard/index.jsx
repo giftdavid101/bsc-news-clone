@@ -72,7 +72,7 @@ const CardBoard = () => {
                         by={el.name}
                         colur={el.dcolor}>
                         <div className={'emage'}  style={{ backgroundImage: `url('${el.emag}')` }}>
-                            <img src={el.photo} alt={'foto'} />
+                            <img src={el.photo} alt={''} />
                             <div className={'cd-content-tag'}>
                                 <div className={'cd-content-tag_card-title'}>{el.title}</div>
                                 <div className={`bottns ${colorCodes}: ${el.dcolor}`}>{el.status}</div>
@@ -80,8 +80,7 @@ const CardBoard = () => {
                                 <div className={'cd-content-tag_card-end-bottom'}>
                                     <div className={'cd-content-tag_card-end-bottom_source'}>
                                         <div>
-                                            <span className={'by-text'}>by</span>
-                                            <span>{el.name}</span>
+                                            <span ><span className={'by-text'}>by</span>{el.name}</span>
                                         </div>
                                         <div className={'date'}>{el.date}</div>
                                     </div>
@@ -89,10 +88,6 @@ const CardBoard = () => {
                             </div>
 
                         </div>
-
-                        {/*<div className={'photo foto'}>*/}
-                        {/*    <img src={el.imageUrl} key={el.id} alt={'foto'} />*/}
-                        {/*</div>*/}
 
                     </Card>
                 ))}
